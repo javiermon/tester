@@ -119,7 +119,7 @@ def createRegressionTest(files):
 
 
 def main():
-    """main. Parses options and launches ats accordingly
+    """main. Parses options and launches tester accordingly
     """
     log.configureLogger(log=log.testlog, fileLog=log.TESTLOGFILE, format=log.TESTFORMAT, truncate=True)
     log.configureLogger(log=log.log, fileLog=log.LOGFILE)
