@@ -9,5 +9,5 @@ function printhead()
 echo Removing old tests suites
 rm regression.tests
 echo Generating new tests suites
-printhead regression-all.tests
+printhead regression.tests
 ls -1 *test.py | >> regression.tests
