@@ -1,0 +1,6 @@
+This is an automated testing framework tool
+
+It can run pyunit tests and logs result of the tests.
+No need to hardcode tests, this tool instrospect tests
+on the go and will run them as long as they are pyunit
+tests.
