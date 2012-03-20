@@ -8,7 +8,7 @@ XYZtest.py.  Each such script should be a test suite that tests a
 module through PyUnit.
 
 Example Usage:
-sudo ./ats.py --file=regression.tests --verbosity=5 --settings=settings.ini
+sudo ./tester.py --file=regression.tests --verbosity=5 --settings=settings.ini
 
 Parameters:
 -h, --help: Print this help
