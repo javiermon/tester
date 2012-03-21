@@ -13,7 +13,6 @@ class TestingTest(unittest.TestCase):
 
     def testTest(self):
         """Checks true"""
-        # The fonera is on:
         self.assertTrue(1 == 1)
             
         
