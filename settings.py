@@ -13,7 +13,7 @@ INI = 'settings.ini'
 class Settings(object):
     """Application Settings
     """
-    __shared_state = {'cp': ConfigParser.ConfigParser(),}
+    __shared_state = {'cp': ConfigParser.RawConfigParser(allow_no_value=True),}
 
     def __init__(self):
         self.__dict__ = self.__shared_state
@@ -43,3 +43,9 @@ class Settings(object):
         for option in options:
             result[option] = self.cp.get(section, option)
         return result
+
+    def getListSection(self, section):
+        """Returns a list of items
+        useful for lists of items without values
+        """
+        return self.cp.options(section)
